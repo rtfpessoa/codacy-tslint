@@ -8,4 +8,7 @@ coverage
 .nyc_output
 *.log
 
+/docs/
+
 package-lock.json
+yarn-error.log

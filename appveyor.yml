@@ -11,13 +11,10 @@ cache:
 install:
   - ps: Install-Product node $env:nodejs_version
   - node --version
-  - npm --version
-  - npm install
+  - yarn
 
 test_script:
-  - npm test
-  - npx nyc report --reporter=lcov | npx codecov
-  - npm run cov:check
+  - yarn run test
 
 build: off
 deploy: off

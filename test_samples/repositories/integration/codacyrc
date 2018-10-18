@@ -1,0 +1,24 @@
+{
+  "tools": [
+    {
+      "name": "tslint",
+      "patterns": [
+        {
+          "patternId": "interface-name",
+          "parameters": {
+            "name": "interface-name",
+            "value": [true, "always-prefix"]
+          }
+        },
+        {
+          "patternId": "no-magic-numbers",
+          "parameters": {
+            "name": "no-magic-numbers",
+            "value": true
+          }
+        }
+      ]
+    }
+  ],
+  "files": ["test.ts"]
+}

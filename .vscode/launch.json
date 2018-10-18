@@ -9,7 +9,7 @@
       "cwd": "${workspaceFolder}/build",
       // Replace this with your project root. If there are multiple, you can
       // automatically run the currently visible file with: "program": ${file}"
-      "program": "${workspaceFolder}/src/cli/cli.ts",
+      "program": "${file}",
       // "args": ["--no-install"],
       "outFiles": ["${workspaceFolder}/build/main/**/*.js"],
       "skipFiles": [
@@ -42,6 +42,21 @@
         // so the user has to navigate to the compiled file manually. (Close:)
         // "${workspaceFolder}/build/main/lib/${fileBasenameNoExtension}.js"
       ],
+      "skipFiles": ["<node_internals>/**/*.js"],
+      // Consider using `npm run watch` or `yarn watch` for faster debugging
+      // "preLaunchTask": "npm: build",
+      // "smartStep": true,
+      "runtimeArgs": ["--nolazy"]
+    },
+    {
+      /// Usage: set appropriate breakpoints in a *.spec.ts file, then open the
+      // respective *.spec.js file to run this task. Once a breakpoint is hit,
+      // the debugger will open the source *.spec.ts file for debugging.
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Compiled JS",
+      "program": "${file}",
+      "args": [],
       "skipFiles": ["<node_internals>/**/*.js"],
       // Consider using `npm run watch` or `yarn watch` for faster debugging
       // "preLaunchTask": "npm: build",

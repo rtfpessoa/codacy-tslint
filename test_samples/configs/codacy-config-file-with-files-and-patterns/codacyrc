@@ -1,0 +1,21 @@
+{
+  "files": [
+    "test.ts"
+  ],
+  "tools": [
+    {
+      "name": "tslint",
+      "patterns": [
+        {
+          "patternId": "no-expression-statement",
+          "parameters": [
+            {
+              "name": "no-expression-statement",
+              "value": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

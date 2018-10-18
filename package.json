@@ -1,7 +1,7 @@
 {
   "name": "codacy-tslint",
   "version": "1.0.0",
-  "description": "Codacy wrapper to support tslint analysis of Typescript code",
+  "description": "Codacy wrapper to support TSLint analysis for Typescript",
   "author": {
     "name": "Rodrigo Fernandes",
     "email": "rtfrodrigo@gmail.com"

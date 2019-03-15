@@ -13,8 +13,6 @@ jobs:
           - v1-dependencies-{{ checksum "package.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-      - run: rm yarn.lock
-      - run: yarn config set registry https://registry.npmjs.org
       - run: yarn
       - save_cache:
           paths:
@@ -33,8 +31,6 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
-      - run: rm yarn.lock
-      - run: yarn config set registry https://registry.npmjs.org
       - run: yarn
       - save_cache:
           paths:
